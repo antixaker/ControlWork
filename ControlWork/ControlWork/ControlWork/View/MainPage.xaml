@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlWork.View.MainPage">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style TargetType="Button">
+        <Setter Property="BackgroundColor"  Value="Green"/>
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="FontSize" Value="25" />
+      </Style>
+      <Style x:Key="CrossZeroButtonStyle" TargetType="Button">
+        <Setter Property="BackgroundColor"  Value="Teal"/>
+        <Setter Property="TextColor" Value="White"/>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Button Grid.Column="0" Grid.Row="1" />
+      <Button Grid.Column="0" Grid.Row="2" />
+      <Button Grid.Column="0" Grid.Row="3" />
+      <Button Grid.Column="1" Grid.Row="1" />
+      <Button Grid.Column="1" Grid.Row="2" />
+      <Button Grid.Column="1" Grid.Row="3" />
+      <Button Grid.Column="2" Grid.Row="1" />
+      <Button Grid.Column="2" Grid.Row="2" />
+      <Button Grid.Column="2" Grid.Row="3" />
+      <Button Grid.Row="0" Grid.Column="0" Text="Cross" Style="{StaticResource CrossZeroButtonStyle}"  />
+      <Button Grid.Row="0" Grid.Column="2" Text="Zero" Style="{StaticResource CrossZeroButtonStyle}" />
+    </Grid>
+</ContentPage>
